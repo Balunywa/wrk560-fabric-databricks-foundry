@@ -23,7 +23,7 @@ You can reuse the generic ones (`labguide`, `zoominout`, `vmresizing`, `environm
 Run `tools/fetch-source-media.ps1` to copy the 70 Fabric, Foundry, and Databricks screenshots from the source repo into `labguide/media/`. These ones show Skillable-specific names or flows and should be re-captured:
 
 - `azure-portal-search-rg.png` and `azure-portal-select-storage-account.png` show `rg-build25` and `stbuild<id>`. CloudLabs uses its own resource group name.
-- `create-workspace-side-pane-advanced.png` shows the Skillable shared capacity, not `fabcap<id>`.
+- `create-workspace-side-pane-advanced.png` shows the Skillable shared capacity, not `fabric<id>`.
 - `azure-ai-foundry-select-project.png` shows a hub-based project with **Studio web URL**. This package deploys a Foundry project, which has **Go to Foundry portal**.
 - `azure-ai-foundry-*` agent screenshots show the `gpt-4o` deployment. This package deploys `gpt-5.1` by default.
 - The Exercise 04 Databricks screenshots (`databricks-*`, `azure-databricks-launch-workspace.png`) come from the original November 2025 lab. They show the `Analytics with ADB` folder, but also the old `dbo` destination schema and Skillable names. Re-capture them with `litware_uc_<id>` and the `medallion` schema.

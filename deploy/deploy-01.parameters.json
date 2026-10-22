@@ -12,7 +12,7 @@
     "DeploymentID": { "value": "GET-DEPLOYMENT-ID" },
     "validationSpObjectId": { "value": "GET-SERVICEPRINCIPAL-SPOBJECT-ID" },
     "deployDatabricks": { "value": true },
-    "scriptBaseUrl": { "value": "https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/deploy/" },
+    "scriptBaseUrl": { "value": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/deploy/" },
     "labDataZipUrl": { "value": "https://YOUR-STORAGE.blob.core.windows.net/wrk560/litwaredata.zip" },
     "vmSize": { "value": "Standard_D2s_v5" },
     "fabricCapacitySku": { "value": "F8" },

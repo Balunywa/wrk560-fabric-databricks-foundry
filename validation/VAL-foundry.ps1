@@ -12,7 +12,7 @@
  validationSpObjectId = GET-SERVICEPRINCIPAL-SPOBJECT-ID.
 
  Passes when:
-   - project prj-build-<id> has a connection named ZavaDataAgent
+   - project foundry-project-<id> has a connection named ZavaDataAgent
    - the project has an agent named Zava-Insights-Agent (spaces and hyphens ignored)
    - that agent has a Microsoft Fabric tool
 #>
@@ -25,8 +25,8 @@ $ClientSecret = "$(Get-Variable -Name ClientSecret -ValueOnly -ErrorAction Silen
 $ErrorActionPreference = "Stop"
 $ProgressPreference    = "SilentlyContinue"
 $suffix         = $DeploymentId.ToLower()
-$FoundryName    = "aif-build-$suffix"
-$ProjectName    = "prj-build-$suffix"
+$FoundryName    = "foundry-$suffix"
+$ProjectName    = "foundry-project-$suffix"
 $ConnectionName = "ZavaDataAgent"
 $AgentKey       = "zavainsightsagent"
 $ProjectEndpoint = "https://$FoundryName.services.ai.azure.com/api/projects/$ProjectName"

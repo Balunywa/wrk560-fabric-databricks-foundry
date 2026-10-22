@@ -152,10 +152,10 @@ A question file has these `##` sections: `MetaData` (`Question Type : Single Cho
 | Skillable resource | CloudLabs resource (`deploy-01.json`) | Inject key |
 |---|---|---|
 | `rg-build25` | CloudLabs per-learner resource group | `Resource Group Name` |
-| Shared tenant Fabric capacity | `Microsoft.Fabric/capacities` **fabcap&lt;id&gt;** (F8 by default), with the learner as capacity admin | `Fabric Capacity Name` |
+| Shared tenant Fabric capacity | `Microsoft.Fabric/capacities` **fabric&lt;id&gt;** (F8 by default), with the learner as capacity admin | `Fabric Capacity Name` |
 | `stbuild<id>`, pre-loaded with `litwaredata` | ADLS Gen2 **stbuild&lt;id&gt;**, with `data/litwaredata/*.csv` seeded by `psscript.ps1`. The learner gets Storage Blob Data Reader. The full variant adds a `unity` container for catalog storage. | `Storage Account Name`, `ADLS Gen2 Endpoint` |
-| Hub-based project `prj-build-<id>`, plus a separate Azure OpenAI resource with `gpt-4o` | Foundry resource **aif-build-&lt;id&gt;** + project **prj-build-&lt;id&gt;** + model deployment. The learner gets Azure AI User. | `Foundry Project Name`, `Model Deployment Name` |
-| `adb-build-<id>`, pre-built `litware_unity_catalog`, shared "Analytics with ADB" notebook (full only) | Premium **adb-build-&lt;id&gt;** + access connector **adbac-build-&lt;id&gt;**. `databricks-setup.ps1` creates catalog **litware_uc_&lt;id&gt;** (schemas `raw`, `medallion`, `curated`), the `raw.litwaredata` volume, the grants, and `/Shared/Analytics with ADB/01 DLT Notebook`. | `Databricks Workspace Name`, `Databricks Workspace URL`, `Unity Catalog Name` |
+| Hub-based project `prj-build-<id>`, plus a separate Azure OpenAI resource with `gpt-4o` | Foundry resource **foundry-&lt;id&gt;** + project **foundry-project-&lt;id&gt;** + model deployment. The learner gets Azure AI User. | `Foundry Project Name`, `Model Deployment Name` |
+| `adb-build-<id>`, pre-built `litware_unity_catalog`, shared "Analytics with ADB" notebook (full only) | Premium **databricks-&lt;id&gt;** + access connector **databricks-ac-&lt;id&gt;**. `databricks-setup.ps1` creates catalog **litware_uc_&lt;id&gt;** (schemas `raw`, `medallion`, `curated`), the `raw.litwaredata` volume, the grants, and `/Shared/Analytics with ADB/01 DLT Notebook`. | `Databricks Workspace Name`, `Databricks Workspace URL`, `Unity Catalog Name` |
 | Win11 VM | Windows Server 2022 lab VM with a managed identity, and Edge shortcuts for Fabric, the Azure portal, and Foundry | `LabVM ...` (CloudLabs RDP) |
 
 ### How the Databricks exercise was restored
@@ -179,7 +179,7 @@ This package rebuilds them for CloudLabs. `04-databricks-mirroring.md` follows t
 
 ### What changed from the source, and why
 
-1. **Dedicated Fabric capacity per learner, no trial.** Copilot for Power BI and Fabric data agents don't run on trial capacity, so the workspace is assigned to `fabcap<id>`.
+1. **Dedicated Fabric capacity per learner, no trial.** Copilot for Power BI and Fabric data agents don't run on trial capacity, so the workspace is assigned to `fabric<id>`.
 2. **Foundry project instead of a hub with a separate Azure OpenAI resource.** The model is deployed in the project's own Foundry resource, so the source step "Management center > New connection > Azure OpenAI" is gone. Only the Microsoft Fabric connection remains.
 3. **Model default is `gpt-5.1` (2025-11-13), not `gpt-4o`.** As of the September 2026 retirement schedule, gpt-4o 2024-11-20 is *Legacy*, and 2024-05-13 and 2024-08-06 are *Deprecated*, which blocks new subscriptions. gpt-4.1 is also deprecated. gpt-5.1 is the listed replacement and is GA until 2027-05-15. The model is a parameter, and the guide injects the deployment name.
 4. **Agent name `Zava-Insights-Agent`.** Agents created in the new Foundry experience don't allow spaces in names. The validator ignores spaces and hyphens either way.
@@ -223,7 +223,7 @@ This package rebuilds them for CloudLabs. `04-databricks-mirroring.md` follows t
 4. **Excluding Output Parameters:** `TrainerUserName`, `TrainerUserPassword`.
 5. **Template Permissions:** Contributor (or Owner) on the resource group for the attendee, applied at launch. This is needed to read storage access keys in Exercise 01 and to become a Databricks workspace admin.
 6. **MS Cloud Licenses:** Power BI Pro, which learners need to create reports in a workspace on an F SKU below F64.
-7. **GitHub Master Document URL:** the raw URL of `masterdoc.json` (full) or `masterdoc-fabric.json`, for example `https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/masterdoc.json`. If you move the repo, update the URLs in both master documents and in `scriptBaseUrl` in both parameter files.
+7. **GitHub Master Document URL:** the raw URL of `masterdoc.json` (full) or `masterdoc-fabric.json`, for example `https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/masterdoc.json`. If you move the repo, update the URLs in both master documents and in `scriptBaseUrl` in both parameter files.
 8. **Validations:** create the steps from [validation/README.md](validation/README.md) (four for Fabric-only, six for full), then paste each step ID into the matching `<validation step>` tag.
 
 **Repository:**
