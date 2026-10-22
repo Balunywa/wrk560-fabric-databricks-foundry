@@ -5,23 +5,23 @@
     "BaseURL": "https://github.com/Balunywa/wrk560-fabric-databricks-foundry",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/labguide/00-getting-started-fabric.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/getting-started-fabric.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/labguide/01-ingest-data.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/exercise-01.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/labguide/02-power-bi-copilot.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/exercise-02.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/labguide/03-data-agents.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/exercise-03.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/labguide/05-knowledge-check.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/knowledge-check.md",
         "Order": 5
       }
     ]

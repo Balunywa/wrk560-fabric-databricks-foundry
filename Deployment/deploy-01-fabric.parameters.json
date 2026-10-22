@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": { "value": "demouser" },
+    "adminPassword": { "value": "GEN-PASSWORD" },
+    "trainerUserName": { "value": "trainer" },
+    "trainerUserPassword": { "value": "GEN-PASSWORD" },
+    "AzureUserName": { "value": "GET-AZUSER-UPN" },
+    "AzurePassword": { "value": "GET-AZUSER-PASSWORD" },
+    "AzureUserObjectId": { "value": "GET-AZUSER-OBJECTID" },
+    "DeploymentID": { "value": "GET-DEPLOYMENT-ID" },
+    "validationSpObjectId": { "value": "GET-SERVICEPRINCIPAL-SPOBJECT-ID" },
+    "deployDatabricks": { "value": false },
+    "scriptBaseUrl": { "value": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/Deployment/" },
+    "labDataZipUrl": { "value": "https://raw.githubusercontent.com/Balunywa/wrk560-fabric-databricks-foundry/main/Dataset/litwaredata.zip" },
+    "vmSize": { "value": "Standard_D2s_v5" },
+    "fabricCapacitySku": { "value": "F8" },
+    "modelName": { "value": "gpt-5.1" },
+    "modelVersion": { "value": "2025-11-13" },
+    "modelDeploymentName": { "value": "gpt-5.1" },
+    "modelSkuName": { "value": "GlobalStandard" },
+    "modelCapacity": { "value": 50 }
+  }
+}
