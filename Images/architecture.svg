@@ -31,17 +31,17 @@
 <polyline points="220,200 250,200 250,110 278,110" fill="none" stroke="#1f2328" stroke-width="1.5" marker-end="url(#arrow)"/>
 <text x="246" y="96" text-anchor="end" font-size="11" font-style="italic" fill="#1f2328">OneLake shortcut</text>
 <polyline points="480,110 508,110" fill="none" stroke="#1f2328" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="494" y="52" text-anchor="middle" font-size="11" font-style="italic" fill="#1f2328">Direct Lake</text>
 <polyline points="380,160 380,193" fill="none" stroke="#1f2328" stroke-width="1.5" marker-end="url(#arrow)"/>
 <text x="388" y="181" text-anchor="start" font-size="11" font-style="italic" fill="#1f2328">tables</text>
-<polyline points="480,232 783,212" fill="none" stroke="#1f2328" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="630" y="214" text-anchor="middle" font-size="11" font-style="italic" fill="#1f2328">Microsoft Fabric tool</text>
+<polyline points="380,270 380,281 750,281 750,212 783,212" fill="none" stroke="#1f2328" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="757" y="300" text-anchor="start" font-size="11" font-style="italic" fill="#1f2328">Microsoft Fabric tool</text>
 <rect x="510" y="195" width="200" height="75" rx="8" fill="#ffffff" stroke="#117865" stroke-width="1.5"/>
 <text x="610.0" y="217" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Mirrored catalog</text>
 <text x="610.0" y="237" text-anchor="middle" font-size="11" fill="#57606a">litware_uc_&lt;id&gt; (curated)</text>
 <text x="610.0" y="253" text-anchor="middle" font-size="11" fill="#57606a">SQL analytics endpoint · T-SQL</text>
 <rect x="260" y="330" width="470" height="210" rx="12" fill="#fdf1ef" stroke="#e8432b" stroke-width="2"/>
-<text x="274" y="352" font-size="13" font-weight="700" fill="#e8432b">Azure Databricks · databricks-&lt;id&gt; · Unity Catalog litware_uc_&lt;id&gt;</text>
+<text x="274" y="352" font-size="13" font-weight="700" fill="#e8432b">Azure Databricks · databricks-&lt;id&gt;</text>
+<text x="274" y="370" font-size="11" fill="#57606a">Unity Catalog: litware_uc_&lt;id&gt;</text>
 <rect x="280" y="380" width="130" height="120" rx="8" fill="#ffffff" stroke="#e8432b" stroke-width="1.5"/>
 <text x="345.0" y="402" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">raw</text>
 <text x="345.0" y="422" text-anchor="middle" font-size="11" fill="#57606a">litwaredata</text>

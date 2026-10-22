@@ -32,7 +32,7 @@ Litware's curated CSV files sit in an ADLS Gen2 storage account in your lab reso
 
 ## 🖼️ Architecture Diagram
 
-![Architecture diagram](./Images/architecture-fabric.svg)
+![Architecture diagram](./Images/architecture-fabric.png)
 
 ## 🔍 Explanation of Components
 

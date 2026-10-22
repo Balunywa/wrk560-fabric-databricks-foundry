@@ -17,7 +17,7 @@ Zava, a regional DIY retailer, is acquiring **Litware Inc.** Litware keeps its c
 
 ## 🏗️ Architecture
 
-![Architecture diagram](./Images/architecture.svg)
+![Architecture diagram](./Images/architecture.png)
 
 ## 📚 Lab Guide
 
