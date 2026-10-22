@@ -1,0 +1,33 @@
+[
+  {
+    "Name": "Modernize your data estate with Microsoft Fabric, Azure Databricks, and Microsoft Foundry",
+    "Language": "English",
+    "BaseURL": "https://github.com/Balunywa/wrk560-cloudlabs",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/labguide/00-getting-started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/labguide/01-ingest-data.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/labguide/02-power-bi-copilot.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/labguide/03-data-agents.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/labguide/04-databricks-mirroring.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Balunywa/wrk560-cloudlabs/main/labguide/05-knowledge-check.md",
+        "Order": 6
+      }
+    ]
+  }
+]
